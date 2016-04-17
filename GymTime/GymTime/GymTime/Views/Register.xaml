@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymTime.Views.Register" Title="Register">
+  <StackLayout Padding="20">
+    <Label Text="Cadastro de Novo Usuário" VerticalOptions="Center" HorizontalOptions="Center">
+      <Label.Font>
+        <OnPlatform x:TypeArguments="Font">
+          <OnPlatform.iOS>30</OnPlatform.iOS>
+          <OnPlatform.Android>30</OnPlatform.Android>
+          <OnPlatform.WinPhone>30</OnPlatform.WinPhone>
+        </OnPlatform>
+      </Label.Font>
+    </Label>
+    <Entry Text="Nome" Placeholder="Nome"></Entry>
+    <Entry Text="Nascimento" Keyboard="Numeric" Placeholder="Data de Nascimento"></Entry>
+    <Entry Text="Altura" Keyboard="Numeric" Placeholder="Altura"></Entry>
+    <Entry Text="Peso" Keyboard="Numeric" Placeholder="Peso"></Entry>
+    <Entry Text="Email" Keyboard="Email" Placeholder="Email"></Entry>
+    <Entry IsPassword="True" Text="Senha" Placeholder="Senha"></Entry>
+    <Button Text="Cadastrar-se" Command="{Binding mButtonCreateContact_Click}"></Button>
+    <Button Text="Cadastrar com Facebook"></Button>
+  </StackLayout>
+</ContentPage>
